@@ -1,0 +1,203 @@
+# All words or characters used thus far + definitions.
+
+print()
+# The print() function prints the specified message to the screen, or other standard output device.
+The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+comment
+Syntax: print(object(s), separator=separator, end=end, file=file, flush=flush)
+Parameter Values
+Parameter - Description
+object(s) - Any object, and as many as you like. Will be converted to string before printed
+sep='separator' - Optional. Specify how to separate the objects, if there is more than one. Default is ' '
+end='end' - Optional. Specify what to print at the end. Default is '\n' (line feed)
+file - Optional. An object with a write method. Default is sys.stdout
+flush - Optional. A Boolean, specifying if the output is flushed (True) or buffered (False). Default is False
+https://www.w3schools.com/python/ref_func_print.asp
+https://docs.python.org/3/tutorial/inputoutput.html
+
+
+variable
+#Variables are containers for storing data values.
+Unlike other programming languages, Python has no command for declaring a variable.
+A variable is created the moment you first assign a value to it.
+Variables do not need to be declared with any particular type and can even change type after they have been set.
+You can assign the same value to multiple variables in one line.
+https://www.w3schools.com/python/python_variables.asp
+
+
+math operands
+# Operator 	Description 	Syntax
++ 	Addition: adds two operands 	x + y
+- 	Subtraction: subtracts two operands 	x - y
+* 	Multiplication: multiplies two operands 	x * y
+/ 	Division (float): divides the first operand by the second 	x / y
+// 	Division (floor): divides the first operand by the second 	x // y
+% 	Modulus: returns the remainder when first operand is divided by the second 	x % y
+> 	Greater than: True if left operand is greater than the right 	x > y
+< 	Less than: True if left operand is less than the right 	x < y
+== 	Equal to: True if both operands are equal 	x == y
+!= 	Not equal to - True if operands are not equal 	x != y
+>= 	Greater than or equal to: True if left operand is greater than or equal to the right 	x >= y
+<= 	Less than or equal to: True if left operand is less than or equal to the right 	x <= y
+https://www.geeksforgeeks.org/basic-operators-python/
+
+
+string literal
+# String literals can be enclosed in matching single quotes (') or double quotes ("). They can also be enclosed in matching groups of three single or double quotes (these are generally referred to as triple-quoted strings). The backslash (\) character is used to escape characters that otherwise have a special meaning, such as newline, backslash itself, or the quote character. String literals may optionally be prefixed with a letter `r' or `R'; such strings are called raw strings and use different rules for backslash escape sequences.
+In triple-quoted strings, unescaped newlines and quotes are allowed (and are retained), except that three unescaped quotes in a row terminate the string. (A ``quote'' is the character used to open the string, i.e. either ' or ".)
+Unless an `r' or `R' prefix is present, escape sequences in strings are interpreted according to rules similar to those used by Standard C. The recognized escape sequences are:
+Escape Sequence  	Meaning
+\newline 	Ignored
+\\ 	Backslash (\)
+\' 	Single quote (')
+\" 	Double quote (")
+\a 	ASCII Bell (BEL)
+\b 	ASCII Backspace (BS)
+\f 	ASCII Formfeed (FF)
+\n 	ASCII Linefeed (LF)
+\r 	ASCII Carriage Return (CR)
+\t 	ASCII Horizontal Tab (TAB)
+\v 	ASCII Vertical Tab (VT)
+\ooo 	ASCII character with octal value ooo
+\xhh... 	ASCII character with hex value hh...
+https://docs.python.org/2.0/ref/strings.html
+
+
+f-strings
+#Allows you to directly insert the names from the current scope in the format string.
+>>> name = 'Fred'
+>>> age = 42
+>>> f'He said his name is {name} and he is {age} years old.'
+He said his name is Fred and he is 42 years old.
+https://cito.github.io/blog/f-strings/
+
+
+format()
+#The format() method formats the specified value(s) and insert them inside the string's placeholder.
+The placeholder is defined using curly brackets: {}. Read more about the placeholders in the Placeholder section below.
+The format() method returns the formatted string.
+Syntax
+string.format(value1, value2...)
+Parameter Values
+Parameter 	Description
+value1, value2... 	Required. One or more values that should be formatted and inserted in the string. The values can be A number specifying the position of the element you want to remove.
+The values are either a list of values separated by commas, a key=value list, or a combination of both.
+The values can be of any data type.
+Formatting Types
+
+Inside the placeholders you can add a formatting type to format the result:
+:< 	Left aligns the result (within the available space)
+:> 	Right aligns the result (within the available space)
+:^ 	Center aligns the result (within the available space)
+:= 	Places the sign to the left most position
+:+ 	Use a plus sign to indicate if the result is positive or negative
+:- 	Use a minus sign for negative values only
+:  	Use a space to insert an extra space before positive numbers (and a minus sign befor negative numbers)
+:, 	Use a comma as a thousand separator
+:_ 	Use a underscore as a thousand separator
+:b 	Binary format
+:c 	Converts the value into the corresponding unicode character
+:d 	Decimal format
+:e 	Scientific format, with a lower case e
+:E 	Scientific format, with an upper case E
+:f 	Fix point number format
+:F 	Fix point number format, in uppercase format (show inf and nan as INF and NAN)
+:g 	General format
+:G 	General format (using a upper case E for scientific notations)
+:o 	Octal format
+:x 	Hex format, lower case
+:X 	Hex format, upper case
+:n 	Number format
+:% 	Percentage format
+https://www.w3schools.com/python/ref_string_format.asp
+
+
+Dictionary - {}
+#A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+https://www.w3schools.com/python/python_dictionaries.asp
+
+
+indent
+#Used to define a block of code.
+https://www.programiz.com/python-programming/statement-indentation-comments
+
+
+input()
+#Asks for user input
+https://www.w3schools.com/python/ref_func_input.asp
+
+
+end=
+#By default python’s print() function ends with a newline. A programmer with C/C++ background may wonder how to print without newline.
+Python’s print() function comes with a parameter called ‘end’. By default, the value of this parameter is ‘\n’, i.e. the new line character. You can end a print statement with any character/string using this parameter.
+
+
+from sys import argv
+#From the sysytem-specific parameres and fucntions, import the argument variable function
+Syntax: script, first, second, third, fourth = argv # argv syntax
+https://www.reddit.com/r/learnpython/comments/bu3d08/what_does_from_sys_import_argv_mean/
+
+
+prompt = '> '
+*Used in conjunction with the input command, prompt prints a sting on the screen when the function is called.
+Syntax:
+prompt = '> ' or x = input(prompt)
+https://stackabuse.com/getting-user-input-in-python/
+
+
+File Methods
+#Method 	Description
+close()	Closes the file
+detach()	Returns the separated raw stream from the buffer
+fileno()	Returns a number that represents the stream, from the operating system's perspective
+flush()	Flushes the internal buffer
+isatty()	Returns whether the file stream is interactive or not
+read()	Returns the file content
+readable()	Returns whether the file stream can be read or not
+readline()	Returns one line from the file
+readlines()	Returns a list of lines from the file
+seek()	Change the file position
+seekable()	Returns whether the file allows us to change the file position
+tell()	Returns the current file position
+truncate()	Resizes the file to a specified size
+writeable()	Returns whether the file can be written to or not
+write()	Writes the specified string to the file
+writelines()	Writes a list of strings to the file
+https://www.w3schools.com/python/python_ref_file.asp
+
+
+File Access Modes
+#r: Opens a file for reading only
+r+: Opens a file for both reading and writing
+w: Opens a file for writing only
+w+: Open a file for writing and reading.
+a: Opens a file for appending
+a+: Opens a file for both appending and reading
+https://www.geeksforgeeks.org/file-objects-python/
+
+
+from os.path import exists
+#From the OS module, import the exists fucntion.  This function is used to check whether the specified path exists or not. This method can be also used to check whether the given path refers to an open file descriptor or not.
+Syntax: os.path.exists(path)
+Parameter:
+  Path: A path-like object representing a file system path. A path-like object is either a string or bytes object representing a path.
+Return Type: This method returns a Boolean value of class bool. This method returns True if path exists otherwise returns False.
+https://www.geeksforgeeks.org/python-os-path-exists-method/
+
+
+len()
+#Returns the number of items in a list.
+https://www.w3schools.com/python/ref_func_len.asp
+
+
+Functions
+#A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+A function can return data as a result.
+https://www.w3schools.com/python/python_functions.asp
+
+
+return
+#A return statement is used to end the execution of the function call and “returns” the result (value of the expression following the return keyword) to the caller. The statements after the return statements are not executed. If the return statement is without any expression, then the special value None is returned.
+Note: Return statement can not be used outside the function.
+https://www.geeksforgeeks.org/python-return-statement/
