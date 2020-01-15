@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 print("How old are you?", end=' ')
 age = input()
 print("How tall are you?", end=' ')
@@ -6,6 +7,16 @@ print("How much do you weigh?", end=' ')
 weight = input()
 
 print(f"So, you're {age} old, {height} tall and {weight} heavy.")
+=======
+#print("How old are you?", end=' ')
+#age = input()
+#print("How tall are you?", end=' ')
+#height = input()
+#print("How much do you weigh?", end=' ')
+#weight = input()
+
+#print(f"So, you're {age} old, {height} tall and {weight} heavy.")
+>>>>>>> 47dc61013e68f6a6cf67e144f997c695150b5743
 
 from sys import argv
 script, filename = argv
